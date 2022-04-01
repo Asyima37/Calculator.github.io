@@ -1,5 +1,3 @@
-
-
 body {
     background: lightgrey;
     display: flex;
@@ -14,9 +12,11 @@ body {
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
 	width: fixed;
-	background: white;
+	background: #fff;
 	padding: 25px;
 	border-radius: 37px;
+    box-shadow: inset 5px 5px 12px #fff, 5px 5px 12px rgb(0, 0, 0, 0.16);
+
 }
 
 .calculator {
@@ -28,7 +28,7 @@ body {
 .calculator-screen {
     width: 100%;
     height: 100px;
-    background-color: white;
+    background-color: #fff;
     text-align: right;
     font-size: 36px;
     padding: 0 20px;
@@ -38,6 +38,14 @@ body {
     margin-bottom: 10px;
     flex-direction: column;
     display: flex;
+    box-shadow: inset 2px 3px 11px rgb(0, 0, 0, 0.16), 5px 5px 12px #fff;
+}
+
+.calculator input {
+background-color: transparent;
+border: none;
+text-align: end;
+outline: none;
 }
 
 .calculator-keys {
@@ -51,16 +59,18 @@ body {
 button {
     height: 80px;
     background-color: white;
-    border: 5px solid white;
+    border: 2px solid white;
     font-size: 32px;
     color: rgb(211, 202, 197);
     width: 25%;
     outline: none;
-    border-radius: 50px;
+    border-radius: 70px;
     cursor: pointer;
     margin: 7px;
-    box-shadow: 0 0 13px whitesmoke;
+    box-shadow: inset 0 0 10px #fff, 0 0 10px rgb(0, 0, 0, 0.16);
 }
+
+
 
 
 .all-clear {
